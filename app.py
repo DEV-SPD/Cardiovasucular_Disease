@@ -1,9 +1,9 @@
 import pandas as pd
 import streamlit as st
 import pickle
-from sklearn.preprocessing import OneHotEncoder
+from sklearn.preprocessing import LabelEncoder
 
-encoder = OneHotEncoder()
+encoder = LabelEncoder()
 
 with open('HEART_DISEASE','rb') as f:
     model = pickle.load(f)
